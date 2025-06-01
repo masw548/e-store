@@ -41,9 +41,9 @@ body{
 .nav h1{
     font-family:myfont ;
 }
-#cart-icon{
-    border-radius: 50%;
-}
+.cart-title-box p{
+    margin: 0 !important;
+ }
 .nav svg{
     height: 50px;
     width:  50px;
@@ -66,20 +66,23 @@ body{
     padding: 10px;    
 }
 .cart-box{
-    width: 80%;
-    margin: auto;
-    margin-top: 60px;
+    width: 100%;
+    margin-top: 100px;
     background:var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .title{
     width: 100%;
     background: linear-gradient(to right, var(--btns),var(--special),var(--btns));
-    position : sticky;
+    position : fixed;
     top: 60px;
+    display: flex;
+    justify-content: center;
 }
 .cart-title-box{
     width: 80%;
-    margin: auto;
     display: flex;
     color: var(--primary);
     display: flex;
@@ -88,13 +91,9 @@ body{
 }
 
 
-
-
-
-
-
-
 .cart-box-arr{
+    width: 80%;
+    border: 1px solid green;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -116,7 +115,7 @@ body{
     font-size: 1rem;
 }
 .cart-box .cart-box-arr .row button{
-    background: #f55;
+    background: var(--primary);
     color: #fff;
     border: 1px solid;
     border-radius: 5px;
@@ -124,84 +123,27 @@ body{
 
 .cart-box .cart-box-arr .row button:hover{
     background: #fff;
-    color: #f22;
-}
-
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
-}
-
-.shake-animation {
-    animation: shake 0.3s ease-in-out;
+    color: var(--primary);
 }
 
 /* ...................INDEX ...................... */
-/* ...................CONTAINER OF CARDS ..........*/
-.card-space{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 90%;
-    margin: auto;
-    margin-top: 60px;
-}
-.box{
-    width: 20%;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
-    margin: 1%;
-    background:linear-gradient(to bottom, var(--btns), var(--primary));
-    color: var(--btns);
-    overflow: hidden;
-}
-.box img{
-    width: 98%;
-    display: block;
-    margin: auto;
-    border-radius: 5px;
-}
-.box .info .footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.box button{
-    background: var(--special);
-    color: var(--btns);
-    padding: 5px;
-    border-radius: 5px;
-}
-.box button:hover{
-    background: var(--primary);
-    color: var(--special);
-}
-.box .price{
-    color: var(--special);
-}
-#cart-icon{
-    position: relative;
-}
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
-    .box { width: 31%; }
-
+    .cart-box .cart-box-arr .row{ width: 23%;}
 }
 
-@media screen and (max-width: 768px) and (min-width: 643px) {
-    .box { width: 47%; }
-    .cart-box{ width: 180%};
-
+@media screen and (max-width: 768px) and (min-width: 500px) {
+    .cart-box .cart-box-arr .row{ width: 33%;}
 }
 
-@media screen and (max-width: 643px) {
-    .box { width: 100% }
-    .cart-box { width: 130% }
-    .user .cart-box .cart-box-arr .row{ width: 45%;}
-    .cart-title-box { font-size: 0.8rem; }
+@media screen and (max-width: 500px) {
+        .cart-box .cart-box-arr .row{ width: 95%;}
+        .nav h1 { font-size: 16px;}
+        .nav .log-btn { 
+                    font-size: 16px;
+                    margin: 7px !important;
+                 }
+        .user span#user-name-icon{padding: 2px;margin: 0;}
+        .cart-title-box{font-size: 10px;}
+        .cart-title-box p{margin: 0 !important; }
 }
