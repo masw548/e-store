@@ -205,9 +205,9 @@ body{
 
 @media screen and (max-width: 643px) {
     .nav h1 { font-size: 16px;}
-    .nav .log-btn { font-family: slim;
-                    font-size: 20px;
-                    letter-spacing: 0px;
+    .nav .log-btn { 
+                    font-size: 16px;
+                    margin: 7px !important;
                  }
     .user span#user-name-icon{padding: 2px;margin: 0;}
     .box { width: 100% }
