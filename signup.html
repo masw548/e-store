@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/F.png" type="image/x-icon">
+    <title>e-store sign up</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/sign-up.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <!-- google icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo d-flex justify-content-start">
+            <svg fill="none" role="img" viewBox="0 0 64 64" class="w-full" height="64" data-component-name="">
+                <path
+                    d="M48.33 12.1452C48.285 11.8315 48.015 11.6522 47.79 11.6522C47.565 11.6522 43.11 11.5626 43.11 11.5626C43.11 11.5626 39.375 7.97718 39.015 7.57382C38.655 7.21527 37.935 7.30491 37.665 7.39454C37.665 7.39454 36.945 7.61863 35.775 7.97718C35.595 7.34973 35.28 6.58782 34.875 5.7811C33.57 3.27129 31.59 1.92676 29.25 1.92676C29.07 1.92676 28.935 1.92676 28.755 1.97157C28.665 1.88194 28.62 1.7923 28.53 1.74749C27.495 0.671855 26.19 0.13404 24.615 0.178858C21.6 0.268494 18.585 2.46457 16.11 6.31891C14.4 9.05281 13.095 12.459 12.69 15.1032C9.225 16.1789 6.795 16.9408 6.705 16.9408C4.95 17.4786 4.905 17.5234 4.68 19.1817C4.59 20.4366 0 55.7979 0 55.7979L38.52 62.431L55.215 58.3077C55.17 58.3077 48.375 12.459 48.33 12.1452ZM33.84 8.60463C32.94 8.87354 31.95 9.18726 30.87 9.5458C30.87 8.02199 30.645 5.87073 29.97 4.07802C32.265 4.43656 33.39 7.036 33.84 8.60463ZM28.845 10.1284C26.82 10.7559 24.615 11.4282 22.41 12.1004C23.04 9.72508 24.21 7.39454 25.65 5.82592C26.19 5.24328 26.955 4.61583 27.81 4.25729C28.71 6.00519 28.89 8.47017 28.845 10.1284ZM24.705 2.19566C25.425 2.19566 26.01 2.33012 26.505 2.68866C25.695 3.09202 24.885 3.71947 24.165 4.5262C22.23 6.58782 20.745 9.76989 20.16 12.8623C18.315 13.445 16.515 13.9828 14.895 14.4758C15.975 9.59062 20.07 2.33012 24.705 2.19566Z"
+                    fill="#95BF47"></path>
+                <path
+                    d="M47.7895 11.6526C47.5645 11.6526 43.1095 11.563 43.1095 11.563C43.1095 11.563 39.3745 7.97755 39.0145 7.57419C38.8795 7.43973 38.6995 7.3501 38.5195 7.3501V62.4313L55.2145 58.3081C55.2145 58.3081 48.4195 12.4593 48.3745 12.1456C48.2845 11.8319 48.0145 11.6526 47.7895 11.6526Z"
+                    fill="#5E8E3E"></path>
+                <path
+                    d="M29.2498 20.2129L27.3148 27.4286C27.3148 27.4286 25.1548 26.4426 22.5898 26.6218C18.8098 26.8459 18.8098 29.2213 18.8098 29.8039C19.0348 33.0308 27.5398 33.7479 28.0348 41.3221C28.3948 47.2829 24.8848 51.3613 19.7548 51.6751C13.6348 51.9888 10.2598 48.4034 10.2598 48.4034L11.5648 42.8907C11.5648 42.8907 14.9848 45.4454 17.6848 45.2661C19.4398 45.1765 20.1148 43.6975 20.0248 42.7115C19.7548 38.4986 12.8248 38.7675 12.3748 31.8207C12.0148 25.9944 15.8398 20.1232 24.2998 19.5854C27.5848 19.3613 29.2498 20.2129 29.2498 20.2129Z"
+                    fill="white"></path>
+            </svg>
+            <h1 class="curser" onclick="window.location.href='index.html'">e-store</h1>
+        </div>
+    </div>
+    <div class="back">
+        <div class="sign-up-box">
+            <h1 class="text-center">Sign up</h1>
+            <div class="fname">
+             First Name:   <input type="text" autofocus autocomplete="name" class="input-text" id="fname" name="fname">
+            </div>
+            <div class="lname">
+             Last Name:   <input type="text" class="input-text" autocomplete="name" id="lname" name="lname">
+            </div>
+            <div class="email">
+                <i class="material-icons" id="lockEmailIcon">email</i>
+              E-mail  <input type="email"required id="email" autocomplete="email" name="email">
+            </div>
+            <div class="pass">
+                <i class="material-icons lock-icon" id="lock-icon">verified</i>
+              Password  <input class="pass-word" type="password" autocomplete="new-password" minlength="8" maxlength="16" required name="password" id="password">
+                <i class="material-icons curser visibility" onclick="togglePassword(this,'password')">visibility_off</i>
+            </div>
+            <div class="confirm-pass">
+                <i id="confirmLock" class="material-icons lock">lock</i>
+              Confirm passsword  <input class="pass-word" type="password"required minlength="8" autocomplete="off" maxlength="16" name="confirm-password" id="confirm-password">
+                <i class="material-icons curser visibility" onclick="togglePassword(this,'confirm-password')">visibility_off</i>
+            </div>
+            <button class="btn-up"id='sign-up'>sign up</button>
+            <div class="have-account">
+                <p>have an account?... </p>
+                <button class="btn-in my-1" onclick="window.location.href='login.html'">log in</button>
+            </div>
+            <div class="continue-with">
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+                <p class="text-center">continue with :</p>
+                <div class="footer">
+                    <p class="curser">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewBox="0 0 48 48">
+                            <path fill="#FFC107"
+                                d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z">
+                            </path>
+                            <path fill="#FF3D00"
+                                d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z">
+                            </path>
+                            <path fill="#4CAF50"
+                                d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z">
+                            </path>
+                            <path fill="#1976D2"
+                                d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+                            </path>
+                        </svg> google
+                    </p>
+                    <p class="curser">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewBox="0 0 48 48">
+                            <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1" x1="9.993" x2="40.615"
+                                y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#2aa4f4"></stop>
+                                <stop offset="1" stop-color="#007ad9"></stop>
+                            </linearGradient>
+                            <path fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)"
+                                d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path>
+                            <path fill="#fff"
+                                d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z">
+                            </path>
+                        </svg>facebook
+                    </p>
+                    <p class="curser">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewBox="0 0 64 64">
+                            <circle cx="32" cy="32" r="23" fill="#9c34c2"></circle>
+                            <ellipse cx="32" cy="61" opacity=".3" rx="19" ry="3"></ellipse>
+                            <path fill="#fff"
+                                d="M32,14c2.577,0,4.674-1.957,4.946-4.461C35.352,9.19,33.699,9,32,9	C19.297,9,9,19.297,9,32c0,1.699,0.19,3.352,0.539,4.946C12.044,36.674,14,34.577,14,32C14,22.075,22.075,14,32,14z"
+                                opacity=".3"></path>
+                            <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="3"
+                                d="M15.047,23.427c1.878-3.699,4.932-6.705,8.666-8.522"></path>
+                            <path fill="#a0effe"
+                                d="M37.184,43.111c4.556-1.02,7.818-3.645,7.818-9.252c0-2.6-0.787-4.556-1.97-6.011	c-0.273-0.336-0.274-1.056-0.162-1.474c0.281-1.043,0.066-2.404-0.17-3.383c-0.177-0.73-0.94-1.156-1.662-0.949	c-1.707,0.491-3.115,1.466-4.138,2.136c-0.279,0.182-0.602,0.255-0.931,0.203c-1.244-0.197-2.581-0.282-3.964-0.302L32,24.113V24.08	c-1.383,0.02-2.72,0.105-3.964,0.302c-0.329,0.052-0.652-0.021-0.931-0.203c-1.023-0.669-2.431-1.644-4.138-2.136	c-0.721-0.208-1.485,0.219-1.662,0.949c-0.237,0.979-0.451,2.341-0.17,3.383c0.113,0.418,0.112,1.138-0.162,1.474	c-1.183,1.455-1.97,3.41-1.97,6.011c0,5.607,3.261,8.232,7.818,9.252c0.774,0.173,0.843,1.018,0.544,1.753	c-0.236,0.582-0.368,1.009-0.368,1.677v0.315c-0.168,0.046-0.342,0.087-0.53,0.111c-1.142,0.147-1.98,0-2.559-0.343	c-0.58-0.343-1.267-0.909-1.783-1.662c-0.435-0.635-1.375-2.003-3.596-1.949c-0.388-0.01-0.565,0.354-0.516,0.581	c0.044,0.2,0.22,0.516,0.924,0.773c0.706,0.259,1.169,0.788,1.556,1.411c0.431,0.695,0.693,2.143,2.196,3.218	c0.901,0.644,2.078,1.036,2.954,0.996c0.742-0.034,1.355,0.574,1.355,1.317l0.001,1.628c0,0.659-0.603,1.326-1.228,1.21	c1.854,0.624,4.129,0.813,6.229,0.84v-0.047l0.005,0.047c2.1-0.026,4.375-0.216,6.229-0.84c-0.625,0.115-1.228-0.552-1.228-1.21	l0.002-6.396c0-0.668-0.132-1.095-0.368-1.677C36.342,44.13,36.41,43.285,37.184,43.111z">
+                            </path>
+                            <path
+                                d="M54.461,27.054C51.956,27.326,50,29.423,50,32c0,9.925-8.075,18-18,18	c-2.577,0-4.674,1.957-4.946,4.461C28.648,54.81,30.301,55,32,55c12.703,0,23-10.297,23-23C55,30.301,54.81,28.648,54.461,27.054z"
+                                opacity=".15"></path>
+                        </svg>github
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+        <script src="js/sign-up.js"></script>
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

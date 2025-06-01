@@ -1,0 +1,169 @@
+:root{
+/* الخلفيات والعناصر الأساسية */
+    --primary:#111723;
+/* الخلفيات الثانوية والمساحات الفارغة */
+   --secondary:#f2f4ff;
+/* الأزرار والعناصر التفاعلية */
+   --btns:#fff;
+/* النصوص والعناصر التوضيحية */
+   --special:#f05d2b	;    
+}
+
+/* general elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--secondary);
+}
+.curser{
+    cursor: pointer;
+}
+.nav{
+    background: linear-gradient(to right, var(--btns), var(--primary)) ;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+.container{
+    height: 60px;
+    color:var(--special);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+.nav h1{
+    font-family:myfont ;
+}
+.nav svg{
+    height: 50px;
+    width:  50px;
+    margin-left: 20px;
+}
+@font-face {
+    font-family: regular;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+/* .....................sign up..................... */
+.back{
+    margin-top: 60px;
+    min-height: calc(100vh - 60px);
+    background:var(--secondary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.sign-up-box{
+    font-family: regular;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    background: linear-gradient(to bottom,gray ,var(--primary));
+    box-shadow: -10px 10px 10px #999 ;
+    padding:0 2%;
+}
+.email{
+    position: relative;
+}
+.email input,.pass input,.confirm-pass input,.fname input,.lname input{
+    border:none;
+    border-bottom: 1px solid var(--special);
+    background: transparent;
+    width: 100%;
+    padding-left:10% ;
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #fff;
+}
+i{
+    color: var(--special);
+}
+.email i{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+}
+.pass,.confirm-pass{
+    position: relative;
+}
+.pass i,.confirm-pass i{
+    position: absolute;
+    top: 50%;    
+}
+.pass i.lock,.confirm-pass i.lock{
+    left: 2%;
+}
+.pass i.visibility,.confirm-pass i.visibility{
+    right: 2%;
+}
+.btn-up{
+    border: none;
+    background: var(--primary);
+    border-radius: 10px;
+    border: 1px solid var(--special);
+    color: var(--special);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.btn-up:hover,.btn-in:hover{
+        outline: 1px solid var(--special);
+        background:var(--primary);
+        color: var(--special);
+}
+.have-account{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.have-account p{
+    margin-bottom: 0 !important;
+    padding: 0 0 10px 0 ;
+}
+.btn-in{
+    border: none;
+    background: var(--primary);
+    border-radius: 10px;
+    color: white;
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+.divider span {
+    padding: 0 10px;
+    font-weight: bold;
+}.continue-with svg{
+    width: 30px;
+    height: 30px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+@media only screen and (max-width:1060px) {
+    .back img{display: none;}
+}

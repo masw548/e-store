@@ -1,0 +1,200 @@
+:root{
+/* الخلفيات والعناصر الأساسية */
+    --primary:#111723;
+/* الخلفيات الثانوية والمساحات الفارغة */
+   --secondary:#f2f4ff;
+/* الأزرار والعناصر التفاعلية */
+   --btns:#fff;
+/* النصوص والعناصر التوضيحية */
+   --special:#f05d2b	;    
+}
+/* general elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--secondary);
+}
+.curser{
+    cursor: pointer;
+}
+.nav{
+    background: linear-gradient(to right, var(--btns), var(--primary)) ;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+.container{
+    height: 60px;
+    color:var(--special);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+.nav h1{
+    font-family:myfont ;
+}
+#cart-icon{
+    border-radius: 50%;
+}
+.nav svg{
+    height: 50px;
+    width:  50px;
+    margin-left: 20px;
+}
+.nav .log-btn{
+    border: none;
+    color: var(--special);
+    background: transparent;
+    font-size: 1.6rem;
+}
+.user{
+    position: relative;
+}
+.user span#user-name-icon{
+    background:var(--special);
+    color: var(--secondary);
+    font-weight: bolder;
+    border-radius: 50%;
+    padding: 10px;    
+}
+.this-is-ur-cart-link{
+    color: #fff;
+}
+.cart-box{
+    width: 200%;
+    position: absolute;
+    right: 0%;
+    z-index: 100;
+    padding: 5px;
+    color: var(--btns);
+    border-radius: 5px;
+    box-shadow: -2px 2px 5px 5px #eee;
+    background:linear-gradient(to top,var(--btns) ,var(--primary));
+}
+.cart-box-arr{
+    display: flex;
+    flex-wrap: wrap;
+}
+.user .cart-box .cart-box-arr .row{
+    margin:4px;
+    width: 23%;
+    padding: 5px;
+    background: var(--special);
+    overflow: hidden;
+}
+.user .cart-box .cart-box-arr .row img:hover{
+    transform: scale(1.5);
+
+}
+.user .cart-box .cart-box-arr .row span{
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+}
+.user .cart-box .cart-box-arr .row button{
+    background: #f55;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.cart-box{
+    display: none;
+}
+.user .cart-box .cart-box-arr .row button:hover{
+    background: #fff;
+    color: #f22;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake-animation {
+    animation: shake 0.3s ease-in-out;
+}
+
+/* ...................INDEX ...................... */
+/* ...................CONTAINER OF CARDS ..........*/
+.card-space{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+}
+.box{
+    width: 20%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin: 1%;
+    background:linear-gradient(to bottom, var(--btns), var(--primary));
+    color: var(--btns);
+    overflow: hidden;
+}
+.box img{
+    width: 98%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+.box .info .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box button{
+    background: var(--special);
+    color: var(--btns);
+    padding: 5px;
+    border-radius: 5px;
+}
+.box button:hover{
+    background: var(--primary);
+    color: var(--special);
+}
+.box .price{
+    color: var(--special);
+}
+#cart-icon{
+    position: relative;
+}
+.badge{
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    top:-5px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .box { width: 31%; }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 643px) {
+    .box { width: 47%; }
+    .cart-box{ width: 180%};
+
+}
+
+@media screen and (max-width: 643px) {
+    .box { width: 100% }
+    .cart-box { width: 130% }
+    .user .cart-box .cart-box-arr .row{ width: 45%;}
+    .cart-title-box { font-size: 0.8rem; }
+}

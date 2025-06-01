@@ -1,0 +1,181 @@
+:root{
+/* الخلفيات والعناصر الأساسية */
+    --primary:#111723;
+/* الخلفيات الثانوية والمساحات الفارغة */
+   --secondary:#f2f4ff;
+/* الأزرار والعناصر التفاعلية */
+   --btns:#fff;
+/* النصوص والعناصر التوضيحية */
+   --special:#f05d2b	;    
+}
+/* general elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--secondary);
+}
+.curser{
+    cursor: pointer;
+}
+.nav{
+    background: linear-gradient(to right, var(--btns), var(--primary)) ;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+.container{
+    height: 60px;
+    color:var(--special);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+.nav h1{
+    font-family:myfont ;
+}
+.nav svg{
+    height: 50px;
+    width:  50px;
+    margin-left: 20px;
+}
+/* ........end ... nav bar......................... */
+/* .....................LOG IN..................... */
+.containe{
+    width: 80%;
+    margin: auto;
+}
+.back{
+    margin-top: 60px;
+    min-height: calc(100dvh - 60px);
+    /* background:red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-box{
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    background: linear-gradient(to bottom,gray ,var(--primary));
+    box-shadow: -10px 10px 10px #999 ;
+    padding:0 2%;
+}
+.email{
+    position: relative;
+}
+input{
+    width: 100%;
+    padding-left:10% ;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid var(--special);
+    background: transparent;
+}
+.email input{
+    margin: 20px 0;
+}
+
+.email i{
+    color:var(--special);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+}
+.pass{
+    position: relative;
+}
+.pass i{
+    color: var(--special);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+.pass i.lock{
+    left: 2%;
+}
+.pass i.visibility{
+    right: 2%;
+}
+
+.pass p{
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+.pass p:hover{
+    text-decoration: underline;
+}
+.btn-in{
+    border: none;
+    background: var(--primary);
+    padding: 3%;
+    border-radius: 10px;
+    color: var(--special);
+    border: 1px solid var(--special);
+    font-size: 1.5rem;
+}
+.btn-in:hover{
+        background:var(--primary);
+        color: var(--special);
+        outline:1px solid var(--special) ;
+}
+.btn-up{
+    outline:1px solid #fff;
+    border: none;
+    background: var(--primary);
+    padding: 3%;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+.btn-up:hover{
+    color: var(--special);
+    outline:1px solid var(--special);
+}
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+.divider span {
+    padding: 0 10px;
+    font-weight: bold;
+}
+.footer svg{
+    width: 32px;
+    height: 32px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+@media only screen and (max-width:1060px) {
+    .back img { display: none; }
+    .back { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+}
