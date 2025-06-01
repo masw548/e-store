@@ -56,11 +56,10 @@ body{
 /* .....................sign up..................... */
 .back{
     margin-top: 60px;
-    min-height: calc(100vh - 60px);
     background:var(--secondary);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .sign-up-box{
