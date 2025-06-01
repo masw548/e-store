@@ -24,6 +24,7 @@ body{
 .nav{
     background: linear-gradient(to right, var(--btns), var(--primary)) ;
     position: fixed;
+    color: var(--special);
     z-index: 1000;
     top: 0;
     width: 100%;
