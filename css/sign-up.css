@@ -164,6 +164,6 @@ i{
     justify-content: space-around;
     align-items: end;
 }
-@media only screen and (max-width:1060px) {
-    .back img{display: none;}
+@media only screen and (max-width:600px) {
+        .sign-up-box {width: 90%;}
 }
